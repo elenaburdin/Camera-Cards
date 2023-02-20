@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Utilities */
+body {
+    max-width: 1100px;
+    font-family: 'Roboto', sans-serif;
+    color: #323232;
+    background: #fff;
+    line-height: 1.4;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+
+p {
+    font-size: 0.85rem;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    color: #606060;
+    font-size: 1rem;
+}
+
+/* Buttons */
+
+.btn {
+    background: #f70d1a;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border: none;
+    transition: all 0.3s ease-in;
+
+}
+
+.btn:hover {
+    background: #606060;
+    color: #fff;
+}
+
+/* Header */
+.header-title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    padding-top: 1rem;
+    border-bottom: #f70d1a 2px solid;
+
+}
+
+/* Container */
+.container {
+    width: 25vw;
+}
+
+#showcase-container {
+    border: #918b8b 1px solid;
+    margin-left: 2rem;
+}
+
+/* Card Text */
+.container #card-text {
+    padding: 1rem;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    padding-top: 4rem;
+    border-radius: 5%;
+}
+
+/* Cards Image */
+.container #showcase-img-1 {
+    background: url('/img/canon_eos_6d.jpg') no-repeat center center/cover;
+    height: 300px;
+}
+
+.container #showcase-img-2 {
+    background: url('/img/canon_lens.jpg') no-repeat center center/cover;
+    height: 300px;
+}
+
+.container #showcase-img-3 {
+    background: url('/img/canon_5500.jpg') no-repeat center center/cover;
+    height: 300px;
+}
+
+@media(max-width: 960px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20px;
+    }
+
+    .container {
+        width: 83vw;
+    }
+
+    #showcase-container {
+        margin-top: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
